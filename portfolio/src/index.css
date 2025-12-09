@@ -1,5 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: "Playfair Display", system-ui, Avenir, Helvetica, Arial,
+    sans-serif; */
+  --font-body: "Raleway", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-headline: "Playfair Display", Georgia, serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -8,6 +14,9 @@
   background-color: #242424;
 
   --black: #2d2d2d;
+  --cream: #f4efe6;
+  --pearlJam: #eceadf;
+  --white: #fffcf6;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,12 +30,14 @@ a {
 }
 
 body {
+  font-family: var(--font-body);
   box-sizing: border-box;
   margin: 2%;
   padding: 0;
 }
 
 h1 {
+  font-family: var(--font-headline);
   font-size: 3.2em;
   line-height: 1.1;
 }
