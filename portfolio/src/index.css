@@ -73,6 +73,7 @@ button {
   border-radius: 50px;
   border: none;
   cursor: pointer;
+  z-index: 1000;
   align-self: flex-start;
   transition: transform 0.3s ease;
 }
