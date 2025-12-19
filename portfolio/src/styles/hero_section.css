@@ -60,6 +60,7 @@
   gap: 0.5rem;
 }
 
+
 @media (min-width: 768px) {
   .Hero_wrapper {
     position: relative;
