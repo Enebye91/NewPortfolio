@@ -2,8 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 :root {
-  /* font-family: "Playfair Display", system-ui, Avenir, Helvetica, Arial,
-    sans-serif; */
   --font-body: "Raleway", system-ui, Avenir, Helvetica, Arial, sans-serif;
   --font-headline: "Playfair Display", Georgia, serif;
   line-height: 1.5;
@@ -50,6 +48,12 @@ h4 {
   margin: 0;
   max-width: 50ch;
   font-weight: 500;
+}
+
+h5 {
+  font-family: var(--font-body);
+  font-size: clamp(1.1rem, 2vw, 2.5rem);
+  margin: 0;
 }
 
 p {
