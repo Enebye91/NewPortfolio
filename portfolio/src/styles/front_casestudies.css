@@ -1,0 +1,138 @@
+.frontcase_wrapper {
+  background-color: var(--purple);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frontcase_container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.frontcase_headline {
+  font-size: clamp(2rem, 2vw, 3rem);
+  font-weight: 600;
+  margin: 0;
+}
+
+.frontcase_headline span {
+  display: block;
+}
+
+.frontcase_headline span:last-child {
+  margin-left: 1.5em;
+}
+
+.case_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.case_container {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  max-width: 700px;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: border-radius 0.3s ease;
+  margin-bottom: 40px;
+}
+
+.case_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: inherit;
+}
+
+.case_container:hover {
+  border-radius: 20px;
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.case_item {
+  min-width: 60px;
+  max-width: 150px;
+  height: 35px;
+  padding: 2px 14px;
+  background-color: var(--cream);
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 100;
+  position: absolute;
+  left: 16px;
+  top: 14px;
+  transition: all 0.3s ease;
+}
+
+.case_item:hover {
+  animation: animate 0.6s;
+}
+
+@keyframes animate {
+  25% {
+    transform: scale(0.8, 1.3);
+  }
+  50% {
+    transform: scale(1.1, 0.8);
+  }
+}
+
+.case_item.expanded {
+  animation: jellyEffect 0.3s ease;
+}
+
+@keyframes jellyEffect {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 768px) {
+  .frontcase_container {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    width: 80%;
+  }
+
+  .frontcase_headline {
+    grid-column: 2/4;
+    grid-row: 2/4;
+    padding-left: 1.5rem;
+    height: 30%;
+  }
+
+  .case_wrapper {
+    width: 65%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

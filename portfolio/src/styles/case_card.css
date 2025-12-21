@@ -1,0 +1,60 @@
+.case_company {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 180px;
+  padding: 18px;
+}
+
+.case_company p {
+  margin: 0;
+  color: var(--white);
+  z-index: 100;
+  font-size: 14px;
+}
+
+.case_company p a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.case_company h3 {
+  font-size: 22px;
+  color: var(--white);
+  margin: 0;
+  z-index: 100;
+}
+
+.project_link {
+  color: var(--cream);
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+/* 
+.arrow_image {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover .arrow_image {
+  transform: translateX(6px);
+}
+
+.project-link:active .arrow_image {
+  transform: translateX(-6px);
+} */
+
+@media (min-width: 768px) {
+  .case_container {
+    width: 48%;
+  }
+}
