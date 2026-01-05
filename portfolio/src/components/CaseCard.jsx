@@ -1,13 +1,17 @@
 import { Link } from "react-router-dom";
 import "../styles/case_card.css";
-
-// import arrowImage from "../assets/right-arrow.png";
+import "../data/Cases.jsx";
 
 export default function CaseCard({ project }) {
   return (
-    <article
+    <Link
+      to={`/cases/${project.slug}`}
       className="case_container"
-      //   style={{ backgroundImage: `url(${project.image})` }}
+      style={{
+        "--bg-small": `url(${project.images.small})`,
+        "--bg-medium": `url(${project.images.medium})`,
+        "--bg-large": `url(${project.images.large})`,
+      }}
     >
       <div className="case_item">
         <p>{project.project}</p>
@@ -17,11 +21,10 @@ export default function CaseCard({ project }) {
         <p>{project.description}</p>
         <h3>{project.title}</h3>
 
-        <Link to={project.link} className="project_link">
+        <Link to={`/cases/${project.slug}`} className="project_link">
           View project
-          {/* <img src={arrowImage} alt="Arrow" className="arrow_image" /> */}
         </Link>
       </div>
-    </article>
+    </Link>
   );
 }

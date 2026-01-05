@@ -1,10 +1,8 @@
 import "../styles/front_casestudies.css";
 import { Cases } from "../data/Cases.jsx";
 import CaseCard from "../components/CaseCard";
-// import { useState } from "react";
 
 export default function FrontCase() {
-  // const [isVisible, setIsVisible] = useState(false)
   return (
     <>
       <section className="frontcase_wrapper">

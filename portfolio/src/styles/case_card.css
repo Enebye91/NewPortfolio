@@ -36,25 +36,13 @@
   z-index: 1000;
   transition: transform 0.3s ease;
 }
-
-/* 
-.arrow_image {
-  width: 16px;
-  height: 16px;
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s ease;
-}
-
-.project-link:hover .arrow_image {
-  transform: translateX(6px);
-}
-
-.project-link:active .arrow_image {
-  transform: translateX(-6px);
-} */
-
-@media (min-width: 768px) {
-  .case_container {
-    width: 48%;
-  }
+.case_container {
+  display: block;
+  text-decoration: none;
+  color: var(--black);
+  background-image: var(--bg-small);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
 }

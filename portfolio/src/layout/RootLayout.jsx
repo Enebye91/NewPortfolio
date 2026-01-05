@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/header.jsx";
+import Contact from "../components/Contact_section.jsx";
 import Footer from "../components/Footer.jsx";
 
 export default function RootLayout() {
@@ -8,6 +9,7 @@ export default function RootLayout() {
       <Header />
       <main>
         <Outlet />
+        <Contact />
       </main>
       <Footer />
     </>

@@ -39,24 +39,3 @@ export const ServiceData = [
     ],
   },
 ];
-
-// export const ServiceData = [
-//   {
-//     number: "/1",
-//     title: "Design with purpose",
-//     description:
-//       "My work focuses on turning ideas into meaningful web experiences.",
-//   },
-//   {
-//     number: "/2",
-//     title: "Code with care",
-//     description:
-//       "By coding thoughtfully, I create web experiences with attention",
-//   },
-//   {
-//     number: "/3",
-//     title: "Ideas into reality",
-//     description:
-//       "I collaborate with teams or clients to turn ideas into engaging web experiences",
-//   },
-// ];
