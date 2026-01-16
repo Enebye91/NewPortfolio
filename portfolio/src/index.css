@@ -87,10 +87,11 @@ button:hover {
 }
 
 body {
+  background-color: var(--cream);
   font-family: var(--font-body);
   color: var(--black);
   box-sizing: border-box;
-  margin: 2%;
+  margin: 0;
   padding: 0;
 }
 

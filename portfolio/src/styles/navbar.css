@@ -1,7 +1,10 @@
-/* Wrapper */
 .navbar {
   width: 90%;
-  background: #222;
+  height: 4rem;
+  padding: 2%;
+  background: var(--purple);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -9,13 +12,11 @@
   position: relative;
 }
 
-/* Logo */
 .logo {
   font-size: 1.3rem;
   font-weight: bold;
 }
 
-/* Hamburger */
 .hamburger {
   width: 30px;
   height: 24px;
@@ -84,6 +85,10 @@
 }
 
 @media (min-width: 768px) {
+  .navbar {
+    width: 70%;
+  }
+
   .nav-links {
     width: 35%;
     position: absolute;
