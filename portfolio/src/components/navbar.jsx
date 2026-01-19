@@ -1,4 +1,5 @@
 import "../styles/navbar.css";
+import { Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 
 export default function Navbar() {
@@ -7,8 +8,9 @@ export default function Navbar() {
   const menuRef = useRef();
 
   const menuItems = [
-    { name: "Home", href: "#Home" },
-    { name: "About", href: "#About" },
+    { name: "Home", path: "#/" },
+    { name: "About", path: "/About" },
+    { name: "Case Studies", href: "/CaseStudie" },
   ];
 
   useEffect(() => {
@@ -22,7 +24,7 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" ref={menuRef}>
       <div className="logo">Michelle V.E.L</div>
 
       <div
@@ -34,12 +36,12 @@ export default function Navbar() {
         <span></span>
       </div>
 
-      <ul ref={menuRef} className={`nav-links ${open ? "show" : ""}`}>
+      <ul className={`nav-links ${open ? "show" : ""}`}>
         {menuItems.map((item) => (
           <li key={item.name}>
-            <a href={item.href} onClick={() => setOpen(false)}>
+            <Link to={item.path} onClick={() => setOpen(false)}>
               {item.name}
-            </a>
+            </Link>
           </li>
         ))}
       </ul>

@@ -1,11 +1,9 @@
 .navbar {
-  width: 90%;
+  width: 100%;
   height: 4rem;
-  padding: 2%;
+  padding: 4%;
   background: var(--purple);
-  border-bottom-left-radius: 24px;
-  border-bottom-right-radius: 24px;
-  color: white;
+  color: var(--cream);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,6 +13,7 @@
 .logo {
   font-size: 1.3rem;
   font-weight: bold;
+  color: var(--cream);
 }
 
 .hamburger {
@@ -31,13 +30,13 @@
   display: block;
   height: 3px;
   width: 100%;
-  background: white;
+  background: var(--cream);
   border-radius: 2px;
   transition: all 0.3s;
 }
 
 .hamburger.open span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
+  transform: rotate(45deg) translate(5px, 10px);
 }
 
 .hamburger.open span:nth-child(2) {
@@ -45,23 +44,22 @@
 }
 
 .hamburger.open span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
+  transform: rotate(-45deg) translate(5px, -10px);
 }
 
-/* Menu */
 .nav-links {
   list-style: none;
   position: absolute;
   top: 100%;
   left: 0;
   right: 0;
-  background: #333;
   border-radius: 16px;
+  background: var(--black);
   display: none;
   flex-direction: column;
   padding: 1rem 0;
-  transition: max-height 0.3s ease;
-  overflow: hidden;
+  overflow: visible;
+  z-index: 1000;
 }
 
 .nav-links.show {
@@ -70,23 +68,25 @@
 
 .nav-links li {
   text-align: center;
-  border-bottom: 1px solid #444;
 }
 
 .nav-links li a {
   display: block;
   padding: 0.75rem 0;
-  color: white;
+  color: var(--cream);
   text-decoration: none;
 }
 
 .nav-links li a:hover {
-  background: #444;
+  background: var(--purple);
 }
 
 @media (min-width: 768px) {
   .navbar {
-    width: 70%;
+    width: 80%;
+    padding: 2%;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
   }
 
   .nav-links {
@@ -95,8 +95,13 @@
     top: 100%;
     right: 0;
     left: auto;
-    background: #333;
     flex-direction: column;
     display: none;
+  }
+}
+
+@media (min-width: 1024) {
+  .navbar {
+    width: 70px;
   }
 }
