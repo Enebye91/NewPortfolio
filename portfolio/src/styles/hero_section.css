@@ -16,6 +16,7 @@
 }
 
 .Hero_text_box {
+  max-width: clamp(40ch, 60%, 60ch);
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -58,8 +59,19 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  width: clamp(300px, 60%, 600px);
 }
 
+.note_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+}
+
+.note_container p {
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+}
 
 @media (min-width: 768px) {
   .Hero_wrapper {
@@ -68,13 +80,9 @@
   }
 
   .Hero_text_container {
-    grid-column: 4 / 12;
+    grid-column: 2 / 12;
     grid-row: 2;
     padding-left: 2rem;
-  }
-
-  .Hero_text_box {
-    max-width: 42ch;
   }
 
   .Hero_text_box h1 {
@@ -89,14 +97,15 @@
     position: absolute;
     top: 140px;
     right: 6%;
-    width: 260px;
+    height: 350px;
+    width: 250px;
     aspect-ratio: 3 / 4;
     transform: rotate(8deg);
     z-index: 10;
   }
 
   .Hero_CTA_container {
-    grid-column: 1 / 13;
+    grid-column: 2 / 15;
     grid-row: 3;
     padding-top: 3rem;
   }
@@ -106,12 +115,8 @@
   }
 
   .note_container {
-    grid-column: 6/12;
+    grid-column: 3/14;
     grid-row: 5;
-  }
-
-  .note_container p {
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
   }
 }
 
@@ -120,15 +125,22 @@
     grid-column: 3 / 12;
   }
 
-  .Hero_text_box {
-    max-width: 48ch;
+  .Hero_img_container {
+    width: 280px;
+    height: 400px;
   }
 
+  .Hero_CTA_container {
+    grid-column: 3 / 15;
+  }
+}
+
+@media (min-width: 1280px) {
   .Hero_img_container {
-    top: 130px;
+    top: 100px;
     right: 10%;
-    width: 300px;
-    max-height: 60vh; /* beskytter Nest Hub */
+    height: 450px;
+    width: 325px;
   }
 
   .Hero_CTA_container {
@@ -136,13 +148,10 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1600px) {
   .Hero_img_container {
-    right: 20%;
-    width: 340px;
-  }
-
-  .Hero_text_box {
-    max-width: 60ch;
+    right: 25%;
+    height: 500px;
+    width: 350px;
   }
 }

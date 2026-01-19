@@ -1,5 +1,5 @@
 import "../styles/hero_section.css";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { HeroImages } from "../data/HeroImages.jsx";
 import { CtaData } from "../data/CtaData.jsx";
 
@@ -42,12 +42,11 @@ export default function Hero() {
             </span>
           </h4>
         </div>
-        {/* <Link className="CTA_button" to={CtaData.about.to}>
-          {CtaData.about.label}
-        </Link> */}
 
-        <button className="CTA_button" to={CtaData.about.to}>
-          {CtaData.about.label}
+        <button>
+          <Link className="CTA_button" to={CtaData.about.to}>
+            {CtaData.about.label}
+          </Link>
         </button>
       </article>
       <article className="note_container">

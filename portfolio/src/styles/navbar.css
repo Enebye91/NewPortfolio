@@ -100,8 +100,8 @@
   }
 }
 
-@media (min-width: 1024) {
+@media (min-width: 1024px) {
   .navbar {
-    width: 70px;
+    width: 70%;
   }
 }
