@@ -87,6 +87,16 @@
   }
 
   .description_box {
-    left: 80vh;
+    left: 30vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .service_container {
+    width: 70%;
+  }
+
+  .description_box {
+    left: 85vh;
   }
 }
