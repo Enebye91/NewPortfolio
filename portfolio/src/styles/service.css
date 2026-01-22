@@ -71,7 +71,7 @@
   .description_box {
     display: flex;
     align-items: flex-start;
-    left: 30vh;
+    left: 20rem;
     top: 10%;
   }
 }
@@ -87,16 +87,12 @@
   }
 
   .description_box {
-    left: 30vh;
+    left: 30rem;
   }
 }
 
 @media (min-width: 1280px) {
   .service_container {
     width: 70%;
-  }
-
-  .description_box {
-    left: 85vh;
   }
 }
