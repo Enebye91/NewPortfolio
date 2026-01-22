@@ -16,19 +16,19 @@ export const FooterData = [
       },
     ],
   },
-  {
-    title: "Sitemap",
-    links: [
-      {
-        label: "Home",
-        to: "/",
-      },
-      {
-        label: "About",
-        to: "/About",
-      },
-    ],
-  },
+  // {
+  //   title: "Sitemap",
+  //   links: [
+  //     {
+  //       label: "Home",
+  //       to: "/",
+  //     },
+  //     {
+  //       label: "About",
+  //       to: "/About",
+  //     },
+  //   ],
+  // },
 
   {
     title: "Socials",
