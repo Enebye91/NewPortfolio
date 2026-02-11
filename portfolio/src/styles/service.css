@@ -3,26 +3,37 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 2rem 0;
+  padding-block: clamp(2rem, 6vw, 6rem);
   position: relative;
-  overflow: visible;
 }
 
 .service_container {
-  width: 87%;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 4vw, 3rem);
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: clamp(1.5rem, 3vw, 3rem);
 }
 
 .service_box {
-  display: flex;
-  flex-direction: column;
-  height: 35vh;
-  border-bottom: 1px solid var(--black);
-  gap: 1rem;
-  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr;
   position: relative;
+  cursor: pointer;
+  padding-block: clamp(1.5rem, 4vw, 3rem);
+  padding-inline: clamp(1.5rem, 4vw, 3rem);
+}
+
+.service_box::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: clamp(1.5rem, 4vw, 3rem);
+  right: clamp(1.5rem, 4vw, 3rem);
+  height: 1px;
+  background-color: var(--black);
 }
 
 .box {
@@ -32,19 +43,15 @@
 }
 
 .box span {
-  font-size: 15px;
+  font-size: 0.9rem;
 }
 
 .description_box {
   font-size: 1rem;
-  display: flex;
-  justify-content: end;
-  position: absolute;
-  top: 50%;
+  max-width: 40ch;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s ease;
-  z-index: 1000;
+  transition: opacity 0.25s ease;
 }
 
 .service_box:hover .description_box {
@@ -53,46 +60,31 @@
 }
 
 @media (min-width: 768px) {
-  .service_container {
-    width: 85%;
-  }
-
   .service_box {
-    height: 20vh;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 2rem;
-  }
-
-  .box {
-    width: 50%;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    /* padding-inline: clamp(1.5rem, 4vw, 3rem); */
+    column-gap: clamp(2rem, 4vw, 6rem);
   }
 
   .description_box {
-    display: flex;
-    align-items: flex-start;
-    left: 20rem;
-    top: 10%;
+    justify-self: end;
+    align-self: start;
   }
 }
 
 @media (min-width: 1024px) {
   .service_container {
-    width: 75%;
-    height: 800px;
-  }
-
-  .service_box {
-    height: 50vh;
+    padding-inline: clamp(2rem, 6vw, 5rem);
   }
 
   .description_box {
-    left: 30rem;
+    font-size: 1.05rem;
   }
 }
 
-@media (min-width: 1280px) {
-  .service_container {
-    width: 70%;
+@media (min-width: 1440px) {
+  .description_box {
+    font-size: 1.1rem;
   }
 }

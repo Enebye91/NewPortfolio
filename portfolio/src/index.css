@@ -22,6 +22,11 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --content-max-width-mobile: 640px;
+  --content-max-width-tablet: 900px;
+  --content-max-width-desktop: 1100px;
+  --content-max-width-wide: 1200px;
 }
 
 h1 {

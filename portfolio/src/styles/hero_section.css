@@ -77,6 +77,9 @@
   .Hero_wrapper {
     position: relative;
     grid-template-columns: repeat(15, 1fr);
+
+    max-width: 900px;
+    margin-inline: auto;
   }
 
   .Hero_text_container {
@@ -115,14 +118,18 @@
   }
 
   .note_container {
-    grid-column: 3/14;
+    grid-column: 3 / 14;
     grid-row: 5;
   }
 }
 
 @media (min-width: 1024px) {
+  .Hero_wrapper {
+    max-width: 1100px;
+  }
+
   .Hero_text_container {
-    grid-column: 3 / 12;
+    grid-column: 2 / 12;
   }
 
   .Hero_img_container {
@@ -131,26 +138,34 @@
   }
 
   .Hero_CTA_container {
-    grid-column: 3 / 15;
+    grid-column: 2 / 15;
   }
 }
 
 @media (min-width: 1280px) {
+  .Hero_wrapper {
+    max-width: 1200px;
+  }
+
   .Hero_img_container {
     top: 100px;
-    right: 10%;
+    right: clamp(3rem, 6vw, 8rem);
     height: 450px;
     width: 325px;
   }
 
   .Hero_CTA_container {
-    grid-column: 3 / 14;
+    grid-column: 2 / 15;
   }
 }
 
 @media (min-width: 1600px) {
+  .Hero_wrapper {
+    max-width: 1400px;
+  }
+
   .Hero_img_container {
-    right: 25%;
+    right: clamp(6rem, 10vw, 12rem);
     height: 500px;
     width: 350px;
   }

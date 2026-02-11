@@ -43,7 +43,6 @@
   background-size: cover;
   height: 250px;
   width: 90%;
-  max-width: 700px;
   aspect-ratio: 16 / 9;
   border-radius: 12px;
   display: flex;
@@ -86,7 +85,6 @@
 
 .case_item {
   opacity: 0;
-  min-width: 60px;
   max-width: 150px;
   height: 35px;
   padding: 2px 14px;
@@ -139,7 +137,7 @@
     display: grid;
     grid-template-columns: repeat(15, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    width: 80%;
+    width: 85%;
     margin-bottom: 2vh;
   }
 
@@ -153,7 +151,7 @@
   }
 
   .case_container {
-    min-height: 300px;
+    height: 250px;
   }
 }
 
@@ -164,7 +162,7 @@
     justify-content: space-between;
   }
   .frontcase_container {
-    width: 75%;
+    width: 80%;
   }
 
   .case_container {
@@ -174,11 +172,19 @@
 
 @media (min-width: 1280px) {
   .frontcase_container {
-    width: 70%;
-    margin-top: 10vh;
+    margin: 0vh 0vh 5vh 1vh;
   }
 
   .case_wrapper {
     width: 65%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .frontcase_container {
+    width: 60%;
+  }
+  .case_wrapper {
+    width: 60%;
   }
 }
