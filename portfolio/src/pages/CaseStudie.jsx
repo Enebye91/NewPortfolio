@@ -1,9 +1,10 @@
+import CaseSection from "../components/case_section.jsx";
 export default function CaseStudie() {
-    return(
-        <>
-        <div>
-            <p>Hello</p>
-        </div>
-        </>
-    )
+  return (
+    <>
+      <div>
+        <CaseSection />
+      </div>
+    </>
+  );
 }

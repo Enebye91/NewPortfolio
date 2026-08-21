@@ -57,11 +57,11 @@
 .contact_button {
   width: 225px;
   height: 40px;
-  background-color: var(--orange);
+  background-color: var(--dustyBlue);
 }
 
 .contact_button a {
-  color: var(--black);
+  color: var(--cream);
 }
 
 @media (min-width: 768px) {

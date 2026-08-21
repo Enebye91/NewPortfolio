@@ -1,4 +1,3 @@
-import "../styles/front_casestudies.css";
 import { Cases } from "../data/Cases.jsx";
 import CaseCard from "../components/CaseCard";
 

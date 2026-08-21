@@ -1,0 +1,89 @@
+.case_section {
+  width: 100%;
+  background-color: var(--softWhite);
+}
+
+.case_section_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-block: clamp(3rem, 6vw, 7rem);
+}
+
+.case_intro {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.case_title {
+  margin: 0;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: var(--dustyBlue);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.cases_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--softWhite);
+  padding-block: clamp(3rem, 6vw, 7rem);
+}
+
+.c_container {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--dustyBlue);
+}
+
+.c_container,
+.c_next_container {
+  width: 50%;
+  padding: 0 1.25rem;
+  box-sizing: border-box;
+}
+
+.case_inner {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.case_inner h3 {
+  margin: 0;
+}
+
+.case_inner p {
+  max-width: 40ch;
+}
+
+.c_container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.c_container img:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .case_section_container {
+    width: 80%;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) {
+  .case_section_container {
+    width: 70%;
+  }
+}

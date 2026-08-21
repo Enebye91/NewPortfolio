@@ -14,14 +14,18 @@
   --black: #2d2d2d;
   --cream: #f4efe6;
   --pearlJam: #eceadf;
+  --softWhite: #ebe8e5;
   --white: #fffcf6;
   --purple: #c583ff;
   --orange: #f36d00;
+  --dustyBlue: #515b74;
+  --dustyGreen: #757b57;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 
   --content-max-width-mobile: 640px;
   --content-max-width-tablet: 900px;
@@ -63,7 +67,7 @@ h5 {
 
 p {
   font-size: clamp(1rem, 1.2vw, 1.125rem);
-  max-width: 35ch;
+  max-width: 45ch;
 }
 
 a {
@@ -99,22 +103,3 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */

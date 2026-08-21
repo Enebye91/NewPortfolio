@@ -2,7 +2,6 @@
   width: 100%;
   height: 4rem;
   padding: 4%;
-  background: var(--purple);
   color: var(--cream);
   display: flex;
   justify-content: space-between;
@@ -13,7 +12,7 @@
 .logo {
   font-size: 1.3rem;
   font-weight: bold;
-  color: var(--cream);
+  color: var(--dustyBlue);
 }
 
 .hamburger {
@@ -30,7 +29,7 @@
   display: block;
   height: 3px;
   width: 100%;
-  background: var(--cream);
+  background-color: var(--dustyBlue);
   border-radius: 2px;
   transition: all 0.3s;
 }
@@ -54,7 +53,7 @@
   left: 0;
   right: 0;
   border-radius: 16px;
-  background: var(--black);
+  background: var(--dustyBlue);
   display: none;
   flex-direction: column;
   padding: 1rem 0;
@@ -77,10 +76,6 @@
   text-decoration: none;
 }
 
-.nav-links li a:hover {
-  background: var(--purple);
-}
-
 @media (min-width: 768px) {
   .navbar {
     width: 80%;
@@ -97,35 +92,5 @@
     left: auto;
     flex-direction: column;
     display: none;
-  }
-}
-
-@media (min-width: 1024px) {
-  .navbar {
-    width: 80%;
-  }
-}
-
-@media (min-width: 1280px) {
-  .navbar {
-    width: 78%;
-  }
-}
-
-@media (min-width: 1320px) {
-  .navbar {
-    width: 70%;
-  }
-}
-
-@media (min-width: 1460px) {
-  .navbar {
-    width: 65%;
-  }
-}
-
-@media (min-width: 1500px) {
-  .navbar {
-    width: 60%;
   }
 }

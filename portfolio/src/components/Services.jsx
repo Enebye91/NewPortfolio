@@ -4,6 +4,9 @@ import { ServiceData } from "../data/Service";
 export default function Services() {
   return (
     <section className="services">
+      <article className="service_headline_container">
+        <h2>Nothing great is build alone</h2>
+      </article>
       <article className="service_container">
         {ServiceData.map((section, index) => (
           <div className="service_box" key={index}>

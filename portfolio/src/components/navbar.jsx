@@ -10,7 +10,7 @@ export default function Navbar() {
   const menuItems = [
     { name: "Home", path: "#/" },
     { name: "About", path: "/About" },
-    { name: "Case Studies", href: "/CaseStudie" },
+    { name: "Case Studies", path: "/CaseStudie" },
   ];
 
   useEffect(() => {
